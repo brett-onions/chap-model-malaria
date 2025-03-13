@@ -33,7 +33,7 @@ jobs:
         with:
           platforms: linux/amd64,linux/arm64
           push: true
-          tags: bonions/chap-model-malaria:${{ github.ref_name }}
+          tags: jembi/chap-model-malaria:${{ github.ref_name }}
 
       - name: Build and push latest
         if: ${{ github.ref_name == 'main' }}
@@ -41,5 +41,5 @@ jobs:
         with:
           platforms: linux/amd64,linux/arm64
           push: true
-          tags: bonions/chap-model-malaria:latest
+          tags: jembi/chap-model-malaria:latest
           
